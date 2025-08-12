@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .king{
+            background-color: black;
+            height: 300px;
+            width: 500px;
+            border-radius: 30px;
+            
+        }
+        #klm{
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            background-color:rgb(9, 189, 9);
+            border: none;
+            margin-top: 120px;
+            margin-left: 38px;
+        }
+        #klp{
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(245, 9, 9);
+            border: none;
+            margin-left: 25px;
+        }
+        #klo{
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(244, 209, 10);
+            border: none;
+            margin-left: 25px;
+        }
+        #kln{
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(52, 157, 236);
+            border: none;
+            margin-left: 25px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="king">
+        <h1 class="display">Do you want to my Details...!!</h1>
+        <button id="klm" onclick="change()">Click Here</button>
+        <button id="klp" class="btn">Click Here</button>
+        <button id="klo" class="btn1">Click Here</button>
+        <button id="kln" class="btn2">Click Here</button>
+
+    </div>
+     <script>
+        let sum=document.getElementsByClassName('display')
+        function change()
+        {
+           sum.textContent='My name is Purushotham...'
+           sum.style.color='red';
+        }
+        let sample=document.getElementsByClassName('btn')
+        sample.onclick=function()
+        {
+            sum.textContent='Iam from Nellore...';
+            sum.style.color='blue'
+        }
+        let x=document.getElementsByClassName('btn1')
+        x.onclick=function()
+        {
+            sum.textContent='Currently in Bangalore...';
+            sum.style.color='green'
+        }
+        let xyz=document.getElementsByClassName('btn2')
+        xyz.onclick=function()
+        {
+        sum.textContent='Get a job...';
+        sum.style.color='yellow'
+        }
+     </script>
+</body>
+</html>

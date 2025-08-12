@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <h2>Products</h2>
+    <div style="margin-left: 50px;"id='inner'>
+        <h1 id="counter">0</h1>
+        <i class="bi bi-dash" onclick="sample()"id='hello1'></i>
+        <i class="bi bi-plus-square-fill" onclick="sample1()" id="hello"></i>
+    </div>
+    <script>
+        let plusbtn=document.getElementById('hello');
+        let minusbtn=document.getElementById('hello1');
+        let display=document.getElementById('counter');
+
+        let count=1;
+        display.textContent=count;
+
+        function sample1(){
+            count++;
+            display.textContent=count;
+        }
+        plusbtn.addEventListener('inner',sample1);
+        
+        function sample(){
+            count--;
+            display.textContent=count;
+        }
+        minusbtn.addEventListener('inner',sample);
+    </script>
+</body>
+</html>
